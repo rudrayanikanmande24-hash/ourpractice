@@ -10,7 +10,7 @@ import { Todos2Service } from '../services/todos3.service';
 export class TodoList4Component implements OnInit {
   todosArr3:Itodo3[]=[];
   constructor(private _todoService:Todos2Service) { }
-
+ 
 
   ngOnInit(): void {
 

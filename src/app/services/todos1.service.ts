@@ -17,6 +17,10 @@ export class Todos2Service{
     }
   ]
 
+  createTodo(todo:Itodos2){
+      this.todosArr2.push(todo)
+    }
+
   fetchAllTodos():Observable<Itodos2[]>{
     return of(this.todosArr2)
   }

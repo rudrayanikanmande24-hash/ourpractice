@@ -18,6 +18,10 @@ export class TodoService {
     }
   ];
 
+  createTodo(todo:Itodo){
+    this.todoArr.push(todo)
+  }
+
   fetchAllTodos(): Observable<Itodo[]> {
     return of(this.todoArr);
   }

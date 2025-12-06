@@ -1,0 +1,35 @@
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Sr No</th>
+      <th>Name</th>
+      <th>Lname</th>
+      <th>Education</th>
+      <th>Age</th>
+      <th>Email</th>
+      <th>Edit</th>
+      <th>Remove</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let std of stdArr; let i = index">
+      <td>{{ i + 1 }}</td>
+      <td>{{ std.fname }}</td>
+      <td>{{ std.lname }}</td>
+      <td>{{ std.education }}</td>
+      <td>{{ std.age }}</td>
+      <td>{{ std.email }}</td>
+      <td>
+         <button mat-icon-button color="primary" aria-label="Example icon button with a delete icon">
+          <mat-icon>edit</mat-icon>
+        </button>
+      </td>
+      <td>
+         <button mat-icon-button color="warn" aria-label="Example icon button with a delete icon">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

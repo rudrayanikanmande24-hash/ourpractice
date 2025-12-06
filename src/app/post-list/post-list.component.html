@@ -1,0 +1,31 @@
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Sr No</th>
+      <th>userId</th>
+      <th>name</th>
+      <th>title</th>
+      <th>body</th>
+      <th>EDIT</th>
+      <th>REMOVE</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let post of postArr; let i = index">
+      <td>{{ i + 1 }}</td>
+      <td>{{post.userId}}</td>
+      <td>{{ post.name }}</td>
+      <td>{{ post.title }}</td>
+      <td>{{ post.body }}</td>
+      <td> <button mat-icon-button color="primary" aria-label="Example icon button with a delete icon">
+          <mat-icon>edit</mat-icon>
+        </button></td>
+      <td>
+         <button mat-icon-button color="warn" aria-label="Example icon button with a delete icon">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

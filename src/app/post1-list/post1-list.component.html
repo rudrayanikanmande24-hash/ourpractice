@@ -1,0 +1,12 @@
+<div class="card mb-4" *ngFor="let post of postArr1">
+    <div class="card-header">
+        <h1>{{post.title}}</h1>
+    </div>
+    <div class="card-body">
+        <p>{{post.body}}</p>
+    </div>
+    <div class="card-footer d-flex justify-content-between">
+        <button mat-raised-button color="primary" class="btn btn-sm">Eidt</button>
+        <button mat-raised-button color="warn" class="btn btn-sm">Remove</button>
+    </div>
+</div>

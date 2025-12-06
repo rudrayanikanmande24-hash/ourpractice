@@ -17,6 +17,11 @@ export class TodosService{
     }
    ]
 
+   createTodo(todo:Itodos){
+       this.todosArr.push(todo)
+     }
+   
+
    fetchAllTodos() : Observable<Itodos[]>{
     return of(this.todosArr)
    }

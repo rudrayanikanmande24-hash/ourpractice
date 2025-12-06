@@ -1,0 +1,24 @@
+<div class="card mb-4">
+    <div class="card-body">
+        <form #postForm="ngForm" (ngSubmit)="onPostAdd()">
+            
+            <div class="form-group">
+                <label for="userId">usredId</label>
+                <input type="text" required class="form-control" id="userId" ngModel name="userId">
+            </div>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" required class="form-control" id="name" ngModel name="name">
+            </div>
+            <div class="form-group">
+                <label for="title">title</label>
+                <input type="text" required class="form-control" id="title" ngModel name="title">
+            </div>
+            <div class="form-group">
+                <label for="body">body</label>
+                <input type="text" required class="form-control" id="body" ngModel name="body">
+            </div>
+            <button mat-raised-button color="primary" class="btn btn-block">Add Post</button>
+        </form>
+    </div>
+</div>
